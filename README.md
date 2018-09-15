@@ -8,6 +8,9 @@ The SYX file contains a preset for your BCR2000, ready to be sent to your BCR 20
 
 The BCL file located above contains the cleartext instructions in BCL format (an enormous thanks to Mark van den Berg for providing the excellent document on the B-Control MIDI Implementation, which can be found at https://mountainutilities.eu/). 
 
+The BCL can be modified by you if you like, for example to change the $store instructions to use different preset slots, 
+and then must be converted to SYX format e.g. with the extremely helpful BC-convert tool from https://www.sequencer.de/synth/index.php/BC-Convert.
+
 ### Layout ###
 
 The layout on the BCR2000 after upload of the file is actually pretty simple:
@@ -19,3 +22,9 @@ The layout on the BCR2000 after upload of the file is actually pretty simple:
 * The fourth encoder row is step 9 to 16 for track 3
 
 And yes, the BCR2000 misses 8 encoders to also allow editing the last 8 steps of track 4, but hey, this is already much better than with the Rev2 alone!
+
+### MIDI Channel ###
+
+Uh, as the MIDI channel is encoded into all the messages the BCR2000 is instructed to send, there is easy way to change the MIDI channel of the Rev2 - it should be set to channel zero.
+
+In case you absolutely can not live with channel zero, contact me and we'll find a way!
